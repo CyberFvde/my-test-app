@@ -4,6 +4,13 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+
+# THIS IS THE FIX FOR THE CALLER REPO
+permissions:
+  contents: read
+  security-events: write
+  actions: read
+
 jobs:
   security:
     uses: CyberFvde/security-workflows/.github/workflows/security-pipeline.yaml@main
