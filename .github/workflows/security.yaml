@@ -4,8 +4,8 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch:  # <-- The Enterprise Best Practice
 
-# THIS IS THE FIX FOR THE CALLER REPO
 permissions:
   contents: read
   security-events: write
